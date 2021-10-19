@@ -1,8 +1,6 @@
 
 let read = require('readline-sync');
 
-
-
 let result = () => {
     let n = read.questionFloat("Donne moi un montant ");
 
@@ -40,9 +38,14 @@ let result = () => {
     console.log(`0.5: ${zeroCinq}`);
 
     n = units;
-    units = (n%0.2)
-    let zeroDeux = (n - units)/0.2
-    console.log(`0.2: ${zeroDeux}`);
+    units = (n%0.02)
+    let zeroDeux = (n - units)/0.02
+    console.log(`0.02: ${zeroDeux}`);
+
+    n = units;
+    units = (n%0.01)
+    let zeroUn = (n - units)/0.01
+    console.log(`0.01: ${zeroUn}`);
 
 }
 console.log(result());
