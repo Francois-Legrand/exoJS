@@ -16,4 +16,4 @@ function pyramid() {
         output="";
     }
 }
-pyramid()
+pyramid();

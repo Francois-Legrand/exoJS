@@ -16,4 +16,5 @@ let result = (tab) => {
     return tab.join("-")
   }
  let tab = [5, 8, 11, 6, 1, 9, 3];
-  console.log(result(tab)); 
+  console.log(result(tab));
+  

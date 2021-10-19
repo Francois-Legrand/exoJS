@@ -2,20 +2,20 @@ let read = require('readline-sync');
 
 let result = () => {
     let n = read.questionInt("Donne moi un nombre ou un chiffe ");
-    let filledArray = [];
+    let tab = [];
     for(let i = 0; i < n; i++) {
-        filledArray.splice(i,i,"#")
-        console.log(filledArray.join(""));
+        tab.splice(i,i,"#")
+        console.log(tab.join(""));
         
-        if(filledArray.length == n){
+        if(tab.length == n){
 
-            // while (filledArray.indexOf('#') !== -1) {
-            //     filledArray.shift();
-            //     console.log(filledArray.join(""));
+            // while (tab.indexOf('#') !== -1) {
+            //     tab.shift();
+            //     console.log(tab.join(""));
             // }
-            for(let j = n; filledArray.length > 1; j--){
-                filledArray.pop();
-                console.log(filledArray.join(""));
+            for(let j = n; tab.length > 1; j--){
+                tab.pop();
+                console.log(tab.join(""));
             }
         }
     }

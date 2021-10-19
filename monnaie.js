@@ -44,9 +44,6 @@ let result = () => {
     let zeroDeux = (n - units)/0.2
     console.log(`0.2: ${zeroDeux}`);
 
-
-
-
 }
 console.log(result());
 
